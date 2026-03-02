@@ -42,9 +42,23 @@ schema is in BCNF.
 
 
 ## SQL file (text file) with the table definitions and creation SQL statements that can be executed with SQLite3
-
+![DB Browser Statements](<./DB Browser Statements.png>)
 
 ## SQL files for each one of the queries created on point 7, with clear documentation of what they achieve and examples of their outputs.
+[My file for a Query on joining three tables (Query 1)](./Query%201.sql)<br>
+[My file for a Query on a subquery (Query 2)](./Query%202.sql)<br>
+[My file for a Query on GROUP BY with a HAVING clause (Query 3)](./Query%203.sql)<br>
+[My file for a Query on complex search criterion (Query 4)](./Query%204.sql)<br>
+[My file for a Query on an advanced query mechanism PARTITION (Query 5)](./Query%205.sql)<br>
+[My file for a Query on an advanced query mechanism SELECT CASE/WHEN (Query 6)](./Query%206.sql)<br>
 
+While stated in each of the files on what the query tries to achieve and examples of their output, each query has their real use case for the users of ClassFriends.<br>
+
+* Query 1 — "What classes do I share with my friends?" Literally the core feature of ClassFriends. It's the most natural query in the whole project.<br>
+* Query 2 — "Which users have an active social connection?" Useful for knowing who is actually using the friend system vs. who is isolated on the platform.<br>
+* Query 3 — "Which courses have multiple students enrolled?" Directly useful for finding courses where friend groups are likely to overlap, which ties back to the parent/peer user stories.<br>
+* Query 4 — "What courses are available on certain days for a given term type?" A practical schedule browsing query, like filtering classes by when they meet.<br>
+* Query 5 — "What is the status of all my friend connections, and can I see their schedule?" Directly tied to your business rule that only accepted friends can view each other's schedules.<br>
+* Query 6 — "Who has the heaviest course load in a given term?" Useful for the parent persona who wants to know how many classes their child is taking relative to others.
 
 ## The code of your basic application (Optional)
